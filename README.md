@@ -25,7 +25,7 @@ The training set contains 19096 image sequences. Each 13th and 20th frame in a s
 Sequences in “0313”, “0531” and “0601” subfolders are constructed on TuSimple lane detection dataset, containing scenes in American highway. The four “weadd” folders are added images in rural road in China.  
 The testset has two parts: Testset #1 (270 sequences, each 13th and 20th image is labeled) for testing the overall performance of algorithms. The Testset #2 (17 kinds of hard scenes, all frames are labeled) for testing the robustness of algorithms.   
 To input the data, we provide three index files(train_index, val_index, and test_index). Each row in the index represents for a sequence and its label, including the former 5 input images and the last ground truth (corresponding to the last frame of 5 inputs).
-Our dataset can be downloaded here and put into "./LaneDetectionCode/data/". If you want to use your own data, please refer to the format of our dataset and indexs.
+Our dataset can be downloaded and put into "./LaneDetectionCode/data/". If you want to use your own data, please refer to the format of our dataset and indexs.
 
 ### Pretrained Models
 Pretrained models on PyTorch are available here, including the propoesd models(SegNet-ConvLSTM, UNet-ConvLSTM) as well as the comparable two(SegNet, UNet)  
@@ -54,7 +54,8 @@ http://pan.baidu.com/s/1slSn6Vz
 or https://www.dropbox.com/s/j80iv1a0mvhonsa/RSSCN7.zip?dl=0 
 # References:
 This dataset was originally used for performance evaluation in the following work.
-Zou, Q., Jiang, H., Dai, Q., Yue, Y., Chen, L., & Wang, Q. (2019). Robust Lane Detection from Continuous Driving Scenes Using Deep Neural Networks. arXiv preprint arXiv:1903.02193.
+
+> Zou, Q., Jiang, H., Dai, Q., Yue, Y., Chen, L., & Wang, Q. (2019). Robust Lane Detection from Continuous Driving Scenes Using Deep Neural Networks. arXiv preprint arXiv:1903.02193.
 # Copy Right:
 This dataset was collected for academic research. It MUST NOT be used for commercial purposes. 
 # Contact: 
