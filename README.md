@@ -2,9 +2,10 @@
 This is the source code of Robust Lane Detection from Continuous Driving Scenes Using Deep Neural Networks. We provide the dataset and the pretrained model.
 
 # Network Architecture
-
+![image](https://github.com/qinnzou/Robust-Lane-Detection/blob/master/LaneDetectionCode/save/result/network.png)
 # Some Results
 ![image](https://github.com/qinnzou/Robust-Lane-Detection/blob/master/LaneDetectionCode/save/result/1_data.jpg)
+![image](https://github.com/qinnzou/Robust-Lane-Detection/blob/master/LaneDetectionCode/save/result/1_pred.jpg)
 # Set up
 ## Requirements
 PyTorch 0.4.0  
