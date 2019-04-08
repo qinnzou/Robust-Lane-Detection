@@ -6,6 +6,10 @@ This is the source code of Robust Lane Detection from Continuous Driving Scenes 
 # Some Results
 ![image](https://github.com/qinnzou/Robust-Lane-Detection/blob/master/LaneDetectionCode/save/result/1_data.jpg)
 ![image](https://github.com/qinnzou/Robust-Lane-Detection/blob/master/LaneDetectionCode/save/result/1_pred.jpg)
+![image](https://github.com/qinnzou/Robust-Lane-Detection/blob/master/LaneDetectionCode/save/result/2_data.jpg)
+![image](https://github.com/qinnzou/Robust-Lane-Detection/blob/master/LaneDetectionCode/save/result/2_pred.jpg)
+![image](https://github.com/qinnzou/Robust-Lane-Detection/blob/master/LaneDetectionCode/save/result/3_data.jpg)
+![image](https://github.com/qinnzou/Robust-Lane-Detection/blob/master/LaneDetectionCode/save/result/3_pred.jpg)
 # Set up
 ## Requirements
 PyTorch 0.4.0  
