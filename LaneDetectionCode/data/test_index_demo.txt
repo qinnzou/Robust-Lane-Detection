@@ -1,0 +1,5 @@
+./data/testset/image/1_1.jpg ./data/testset/image/1_4.jpg ./data/testset/image/1_7.jpg ./data/testset/image/1_10.jpg ./data/testset/image/1_13.jpg ./data/testset/truth/1_13.jpg
+./data/testset/image/2_19.jpg ./data/testset/image/2_21.jpg ./data/testset/image/2_23.jpg ./data/testset/image/2_25.jpg ./data/testset/image/2_27.jpg ./data/testset/truth/2_27.jpg
+./data/testset/image/3_4.jpg ./data/testset/image/3_6.jpg ./data/testset/image/3_8.jpg ./data/testset/image/3_10.jpg ./data/testset/image/3_12.jpg ./data/testset/truth/3_12.jpg
+./data/testset/image/4_1.jpg ./data/testset/image/4_4.jpg ./data/testset/image/4_7.jpg ./data/testset/image/4_10.jpg ./data/testset/image/4_13.jpg ./data/testset/truth/4_13.jpg
+./data/testset/image/5_1.jpg ./data/testset/image/5_2.jpg ./data/testset/image/5_3.jpg ./data/testset/image/5_4.jpg ./data/testset/image/5_5.jpg ./data/testset/truth/5_5.jpg
