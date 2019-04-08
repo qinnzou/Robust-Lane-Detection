@@ -21,9 +21,9 @@ The training set is augmented. By flipping and rotating the images in three degr
 The original training set contains continuous driving scenes images, and they are divided into images sequences by every twenty. All images are contained in “clips_all”, and there are 19096 sequences for training. Each 13th and 20th frame in a sequence are labeled, and the 38192 image and their labels are in “clips_13(_truth)” and “clips_20(_truth)”.
 The original training dataset has two parts. Sequences in “0313”, “0531” and “0601” subfolders are constructed on TuSimple lane detection dataset, containing scenes in American highway. The four “weadd” folders are added images in rural road in China.
 + Test set:
- - Testset #1:
+   - Testset #1:
 The normal testset, named Testset #1, is used for testing the overall performance of algorithms. 270 sequences are contained, and each 13th and 20th image is labeled.
- - Testset #2:
+   - Testset #2:
 The Testset #2 is used for testing the robustness of algorithms. 17 kinds of hard scenes for human eyes are contained. All frames are labeled.
 
 # Set up
