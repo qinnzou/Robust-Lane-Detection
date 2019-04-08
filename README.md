@@ -1,8 +1,12 @@
 # Robust-Lane-Detection
+This is the source code of Robust Lane Detection from Continuous Driving Scenes Using Deep Neural Networks. We will provide the dataset and the pretrained model here.
+
+# Network Architecture
+
+# Some Results
 
 # Set up
 ## Requirements
-
 PyTorch 0.4.0  
 Python 3.6  
 CUDA 8.0  
@@ -10,7 +14,7 @@ We run on the Intel Core Xeon E5-2630@2.3GHz, 64GB RAM and two GeForce GTX TITAN
 
 ## Preparation
 ### Data Preparation
-Our dataset contains 19383 continuous driving scenes image sequences, and 39460 frames of them are labeled. The size of images is 128*256.   
+Our dataset contains 19383 continuous driving scenes image sequences, and 39460 frames of them are labeled. The size of images is 128*256. You can find more details in "./Dataset Description.pdf"
 The training set contains 19096 image sequences. Each 13th and 20th frame in a sequence are labeled, and the image and their labels are in “clips_13(_truth)” and “clips_20(_truth)”. All images are contained in “clips_all”.  
 Sequences in “0313”, “0531” and “0601” subfolders are constructed on TuSimple lane detection dataset, containing scenes in American highway. The four “weadd” folders are added images in rural road in China.  
 The testset has two parts: Testset #1 (270 sequences, each 13th and 20th image is labeled) for testing the overall performance of algorithms. The Testset #2 (17 kinds of hard scenes, all frames are labeled) for testing the robustness of algorithms.   
