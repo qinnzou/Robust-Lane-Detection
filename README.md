@@ -31,8 +31,7 @@ We use different sampling strides to get 5 continuous images, as shown below. Ea
 
 ## Download:
 You can download this dataset from the following link,
-http://pan.baidu.com/s/1slSn6Vz
-or https://www.dropbox.com/s/j80iv1a0mvhonsa/RSSCN7.zip?dl=0 
+https://pan.baidu.com/s/1DXy6klAHNmsIjq_g83CGiQ
 
 # Set up
 ## Requirements
