@@ -30,7 +30,7 @@ Index are contained. For detecting lanes in continuous scenes, the input size is
 We use different sampling strides to get 5 continuous images, as shown below. Each row in the index represents for a sequence and its label for training.![image](https://github.com/qinnzou/Robust-Lane-Detection/blob/master/LaneDetectionCode/save/result/sample.png)
 
 ## Download:
-You can download this dataset from the following link,
+You can download this dataset and pretrained model from the following link,
 https://pan.baidu.com/s/1DXy6klAHNmsIjq_g83CGiQ or https://drive.google.com/drive/folders/1BHbYU3AoU5i2mduMtfUkFHVuYObA_fWt?usp=sharing
 
 # Set up
