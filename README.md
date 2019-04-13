@@ -50,7 +50,7 @@ To input the data, we provide three index files(train_index, val_index, and test
 Our dataset can be downloaded and put into "./LaneDetectionCode/data/". If you want to use your own data, please refer to the format of our dataset and indexs.
 
 ### Pretrained Models
-Pretrained models on PyTorch are available here, including the propoesd models(SegNet-ConvLSTM, UNet-ConvLSTM) as well as the comparable two(SegNet, UNet)  
+Pretrained models on PyTorch are available using links in the Download part, including the propoesd models(SegNet-ConvLSTM, UNet-ConvLSTM) as well as the comparable two(SegNet, UNet)  
 You can download them and put them into "./LaneDetectionCode/pretrained/".
 
 ## Training
