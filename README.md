@@ -1,6 +1,8 @@
 # Robust-Lane-Detection
 This is the source code of Robust Lane Detection from Continuous Driving Scenes Using Deep Neural Networks. We provide the dataset and the pretrained model.
 
+Zou Q, et al., Robust Lane Detection from Continuous Driving Scenes Using Deep Neural Networks, 2019.
+
 # Network Architecture
 ![image](https://github.com/qinnzou/Robust-Lane-Detection/blob/master/LaneDetectionCode/save/result/network.png)
 # Some Results
