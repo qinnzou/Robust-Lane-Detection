@@ -1,7 +1,7 @@
 # Robust Lane Detection From Continuous Driving Scenes Using Deep Neural Networks
 This is the source code of Robust Lane Detection from Continuous Driving Scenes Using Deep Neural Networks. We provide the dataset and the pretrained model.
 
-Zou Q, Jiang H, Dai Q, Yue Y, Chen L and Wang Q, Robust Lane Detection from Continuous Driving Scenes Using Deep Neural Networks, under review for IEEE TVT, 2019.
+Zou Q, Jiang H, Dai Q, Yue Y, Chen L and Wang Q, Robust Lane Detection from Continuous Driving Scenes Using Deep Neural Networks, IEEE Transactions on Vehicular Technology, 2019.
 
 # Network Architecture
 ![image](https://github.com/qinnzou/Robust-Lane-Detection/blob/master/LaneDetectionCode/save/result/network.png)
@@ -76,7 +76,7 @@ We have put five images sequences in the "./LaneDetectionCode/data/testset" with
 # References:
 This dataset was originally used for performance evaluation in the following work.
 
-> Zou, Q., Jiang, H., Dai, Q., Yue, Y., Chen, L., & Wang, Q. (2019). Robust Lane Detection from Continuous Driving Scenes Using Deep Neural Networks. arXiv preprint arXiv:1903.02193.
+> Zou, Q., Jiang, H., Dai, Q., Yue, Y., Chen, L., & Wang, Q., Robust Lane Detection from Continuous Driving Scenes Using Deep Neural Networks, IEEE Transactions on Vehicular Technology, 2019.
 # Copy Right:
 This dataset was collected for academic research. It MUST NOT be used for commercial purposes. 
 # Contact: 
