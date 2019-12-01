@@ -75,10 +75,15 @@ We have put five images sequences in the "./LaneDetectionCode/data/testset" with
 
 # Citation:
 @article{zou2019tvt,
+
   title={Robust lane detection from continuous driving scenes using deep neural networks},
+  
   author={Q. Zou and H. Jiang and Q. Dai and Y. Yue and L. Chen and Q. Wang},
+  
   journal={IEEE Transactions on Vehicular Technology},
+  
   year={2019},
+  
 }
 
 # Copy Right:
