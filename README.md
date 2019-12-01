@@ -13,7 +13,7 @@ Zou Q, Jiang H, Dai Q, Yue Y, Chen L and Wang Q, Robust Lane Detection from Cont
 ![image](https://github.com/qinnzou/Robust-Lane-Detection/blob/master/LaneDetectionCode/save/result/2_pred.jpg)
 ![image](https://github.com/qinnzou/Robust-Lane-Detection/blob/master/LaneDetectionCode/save/result/3_pred.jpg)
 
-# LANEChallenge2019 Dataset
+# tvtLANE Dataset
 ## Description:
 This dataset contains 19383 image sequences for lane detection, and 39460 frames of them are labeled. These images were divided into two parts, a training dataset contains 9548 labeled images and augmented by four times, and a test dataset has 1268 labeled images. The size of images in this dataset is 128*256.
 + Training set:
@@ -29,7 +29,7 @@ The normal testset, named Testset #1, is used for testing the overall performanc
 The Testset #2 is used for testing the robustness of algorithms. 17 kinds of hard scenes for human eyes are contained. All frames are labeled.
 ## Using:
 Index are contained. For detecting lanes in continuous scenes, the input size is 5 in our paper. Thus, the former images are additional information to predict lanes in the last frame, and the last frame is the labeled one.
-We use different sampling strides to get 5 continuous images, as shown below. Each row in the index represents for a sequence and its label for training.![image](https://github.com/qinnzou/Robust-Lane-Detection/blob/master/LaneDetectionCode/save/result/sample.png)
+We use different sampling strides to get 5 continuous images, as shown below. Each row in the index represents for a sequence and its label for training.![image](https://github.com/qinnzou/Robust-Lane-Detection/blob/master/LaneDetectionCode/save/result/lane2.png)
 
 ## Download:
 You can download this dataset and pretrained model from the following link,
