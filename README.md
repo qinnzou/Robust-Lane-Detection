@@ -24,7 +24,7 @@ The original training set contains continuous driving scenes images, and they ar
 The original training dataset has two parts. Sequences in “0313”, “0531” and “0601” subfolders are constructed on TuSimple lane detection dataset, containing scenes in American highway. The four “weadd” folders are added images in rural road in China.
 + Test set:
    - Testset #1:
-The normal testset, named Testset #1, is used for testing the overall performance of algorithms. 270 sequences are contained, and each 13th and 20th image is labeled.
+The normal testset, named Testset #1, is used for testing the overall performance of algorithms. Sequences in “0530”, “0531” and “0601” subfolders are constructed on TuSimple lane dataset. 270 sequences are contained, and each 13th and 20th image is labeled.
    - Testset #2:
 The Testset #2 is used for testing the robustness of algorithms. 12 kinds of hard scenes for human eyes are contained. All frames are labeled.
 ## Using:
