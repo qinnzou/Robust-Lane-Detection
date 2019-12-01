@@ -26,7 +26,7 @@ The original training dataset has two parts. Sequences in “0313”, “0531”
    - Testset #1:
 The normal testset, named Testset #1, is used for testing the overall performance of algorithms. 270 sequences are contained, and each 13th and 20th image is labeled.
    - Testset #2:
-The Testset #2 is used for testing the robustness of algorithms. 17 kinds of hard scenes for human eyes are contained. All frames are labeled.
+The Testset #2 is used for testing the robustness of algorithms. 12 kinds of hard scenes for human eyes are contained. All frames are labeled.
 ## Using:
 Index are contained. For detecting lanes in continuous scenes, the input size is 5 in our paper. Thus, the former images are additional information to predict lanes in the last frame, and the last frame is the labeled one.
 We use different sampling strides to get 5 continuous images, as shown below. Each row in the index represents for a sequence and its label for training.![image](https://github.com/qinnzou/Robust-Lane-Detection/blob/master/LaneDetectionCode/save/result/lane3.png)
@@ -47,7 +47,7 @@ We run on the Intel Core Xeon E5-2630@2.3GHz, 64GB RAM and two GeForce GTX TITAN
 Our dataset contains 19383 continuous driving scenes image sequences, and 39460 frames of them are labeled. The size of images is 128*256. 
 The training set contains 19096 image sequences. Each 13th and 20th frame in a sequence are labeled, and the image and their labels are in “clips_13(_truth)” and “clips_20(_truth)”. All images are contained in “clips_all”.  
 Sequences in “0313”, “0531” and “0601” subfolders are constructed on TuSimple lane detection dataset, containing scenes in American highway. The four “weadd” folders are added images in rural road in China.  
-The testset has two parts: Testset #1 (270 sequences, each 13th and 20th image is labeled) for testing the overall performance of algorithms. The Testset #2 (17 kinds of hard scenes, all frames are labeled) for testing the robustness of algorithms.   
+The testset has two parts: Testset #1 (270 sequences, each 13th and 20th image is labeled) for testing the overall performance of algorithms. The Testset #2 (12 kinds of hard scenes, all frames are labeled) for testing the robustness of algorithms.   
 To input the data, we provide three index files(train_index, val_index, and test_index). Each row in the index represents for a sequence and its label, including the former 5 input images and the last ground truth (corresponding to the last frame of 5 inputs).
 Our dataset can be downloaded and put into "./LaneDetectionCode/data/". If you want to use your own data, please refer to the format of our dataset and indexs.
 
