@@ -72,20 +72,16 @@ python test.py
 The quantitative evaluations of Accuracy, Precision, Recall and  F1 measure would be printed, and the result pictures will be save in "./LaneDetectionCode/save/result/".  
 We have put five images sequences in the "./LaneDetectionCode/data/testset" with test_index_demo.txt on UNet-ConvLSTM for demo. You can run test.py directly to check the performance.
 
-
 # Citation:
+Please cite our paper if you use this code or data in your own work:
+```
 @article{zou2019tvt,
-
   title={Robust lane detection from continuous driving scenes using deep neural networks},
-  
   author={Q. Zou and H. Jiang and Q. Dai and Y. Yue and L. Chen and Q. Wang},
-  
   journal={IEEE Transactions on Vehicular Technology},
-  
   year={2019},
-  
 }
-
+```
 # Copy Right:
 This dataset was collected for academic research. It MUST NOT be used for commercial purposes. 
 # Contact: 
