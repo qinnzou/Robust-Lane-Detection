@@ -29,7 +29,7 @@ The normal testset, named Testset #1, is used for testing the overall performanc
 The Testset #2 is used for testing the robustness of algorithms. 17 kinds of hard scenes for human eyes are contained. All frames are labeled.
 ## Using:
 Index are contained. For detecting lanes in continuous scenes, the input size is 5 in our paper. Thus, the former images are additional information to predict lanes in the last frame, and the last frame is the labeled one.
-We use different sampling strides to get 5 continuous images, as shown below. Each row in the index represents for a sequence and its label for training.![image](https://github.com/qinnzou/Robust-Lane-Detection/blob/master/LaneDetectionCode/save/result/lane2.png)
+We use different sampling strides to get 5 continuous images, as shown below. Each row in the index represents for a sequence and its label for training.![image](https://github.com/qinnzou/Robust-Lane-Detection/blob/master/LaneDetectionCode/save/result/lane3.png)
 
 ## Download:
 You can download this dataset and pretrained model from the following link,
