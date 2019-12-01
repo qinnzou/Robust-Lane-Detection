@@ -73,10 +73,14 @@ The quantitative evaluations of Accuracy, Precision, Recall and  F1 measure woul
 We have put five images sequences in the "./LaneDetectionCode/data/testset" with test_index_demo.txt on UNet-ConvLSTM for demo. You can run test.py directly to check the performance.
 
 
-# References:
-This dataset was originally used for performance evaluation in the following work.
+# Citation:
+@article{zou2019tvt,
+  title={Robust lane detection from continuous driving scenes using deep neural networks},
+  author={Q. Zou and H. Jiang and Q. Dai and Y. Yue and L. Chen and Q. Wang},
+  journal={IEEE Transactions on Vehicular Technology},
+  year={2019},
+}
 
-> Zou, Q., Jiang, H., Dai, Q., Yue, Y., Chen, L., & Wang, Q., Robust Lane Detection from Continuous Driving Scenes Using Deep Neural Networks, IEEE Transactions on Vehicular Technology, 2019.
 # Copy Right:
 This dataset was collected for academic research. It MUST NOT be used for commercial purposes. 
 # Contact: 
