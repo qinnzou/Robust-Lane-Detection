@@ -33,6 +33,7 @@ We use different sampling strides to get 5 continuous images, as shown below. Ea
 
 ## Download:
 You can download this **dataset** from the link in the '**Dataset-Description-v1.2.pdf**' file.
+
 You can also download the **pretrained model** from the following link,
 https://pan.baidu.com/s/1DXy6klAHNmsIjq_g83CGiQ or https://drive.google.com/drive/folders/1BHbYU3AoU5i2mduMtfUkFHVuYObA_fWt?usp=sharing
 
