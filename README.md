@@ -35,12 +35,14 @@ We use different sampling strides to get 5 continuous images, as shown below. Ea
 You can download this **dataset** from the link in the '**Dataset-Description-v1.2.pdf**' file.
 BaiduYun：https://pan.baidu.com/s/1lE2CjuFa9OQwLIbi-OomTQ 
 passcodes：tf9x 
-   Or https://drive.google.com/drive/folders/1MI5gMDspzuV44lfwzpK6PX0vKuOHUbb_?usp=sharing 
+
+Or https://drive.google.com/drive/folders/1MI5gMDspzuV44lfwzpK6PX0vKuOHUbb_?usp=sharing 
 
 You can also download the **pretrained model** from the following link,
 https://pan.baidu.com/s/1DXy6klAHNmsIjq_g83CGiQ or https://drive.google.com/drive/folders/1BHbYU3AoU5i2mduMtfUkFHVuYObA_fWt?usp=sharing
 
 All pretrained models can be download at https://pan.baidu.com/s/1u9ABAPouZL2nIMT4E7uAQw 
+
 passcodes：w30b
 
 # Set up
