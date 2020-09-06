@@ -32,17 +32,18 @@ Index are contained. For detecting lanes in continuous scenes, the input size is
 We use different sampling strides to get 5 continuous images, as shown below. Each row in the index represents for a sequence and its label for training.![image](https://github.com/qinnzou/Robust-Lane-Detection/blob/master/LaneDetectionCode/save/result/lane3.png)
 
 ## Download:
-You can download this **dataset** from the link in the '**Dataset-Description-v1.2.pdf**' file.
-BaiduYun：https://pan.baidu.com/s/1lE2CjuFa9OQwLIbi-OomTQ 
-passcodes：tf9x 
+You can download this **dataset** from the link in the '**Dataset-Description-v1.2.pdf**' file.  
+BaiduYun：  
+https://pan.baidu.com/s/1lE2CjuFa9OQwLIbi-OomTQ 
+passcodes：tf9x Or  
+Google Drive:  
+https://drive.google.com/drive/folders/1MI5gMDspzuV44lfwzpK6PX0vKuOHUbb_?usp=sharing   
 
-Or https://drive.google.com/drive/folders/1MI5gMDspzuV44lfwzpK6PX0vKuOHUbb_?usp=sharing 
+You can also download the **pretrained model** from the following link,  
+https://pan.baidu.com/s/1DXy6klAHNmsIjq_g83CGiQ or   
+https://drive.google.com/drive/folders/1BHbYU3AoU5i2mduMtfUkFHVuYObA_fWt?usp=sharing
 
-You can also download the **pretrained model** from the following link,
-https://pan.baidu.com/s/1DXy6klAHNmsIjq_g83CGiQ or https://drive.google.com/drive/folders/1BHbYU3AoU5i2mduMtfUkFHVuYObA_fWt?usp=sharing
-
-All pretrained models can be download at https://pan.baidu.com/s/1u9ABAPouZL2nIMT4E7uAQw 
-
+All pretrained models can be download at https://pan.baidu.com/s/1u9ABAPouZL2nIMT4E7uAQw   
 passcodes：w30b
 
 # Set up
@@ -89,7 +90,10 @@ Please cite our paper if you use this code or data in your own work:
   title={Robust lane detection from continuous driving scenes using deep neural networks},
   author={Q. Zou and H. Jiang and Q. Dai and Y. Yue and L. Chen and Q. Wang},
   journal={IEEE Transactions on Vehicular Technology},
-  year={2019},
+  volume={69},
+  number={1},
+  pages={41--54},
+  year={2020},
 }
 ```
 # Copy Right:
