@@ -97,6 +97,6 @@ Please cite our paper if you use this code or data in your own work:
 }
 ```
 # Copy Right:
-This dataset was collected for academic research. It MUST NOT be used for commercial purposes. 
+This dataset was collected for academic research only.  
 # Contact: 
 For any problem about this dataset, please contact Dr. Qin Zou (qzou@whu.edu.cn).
