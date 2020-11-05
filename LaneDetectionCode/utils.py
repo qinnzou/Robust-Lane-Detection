@@ -8,6 +8,14 @@ from torch.autograd import Variable
 class double_conv(nn.Module):
     '''(conv => BN => ReLU) * 2'''
     def __init__(self, in_ch, out_ch):
+        """
+        Initialize the layer.
+
+        Args:
+            self: (todo): write your description
+            in_ch: (int): write your description
+            out_ch: (str): write your description
+        """
         super(double_conv, self).__init__()
         self.conv = nn.Sequential(
             nn.Conv2d(in_ch, out_ch, 3, padding=1),
@@ -19,22 +27,52 @@ class double_conv(nn.Module):
         )
 
     def forward(self, x):
+        """
+        Forward computation.
+
+        Args:
+            self: (todo): write your description
+            x: (todo): write your description
+        """
         x = self.conv(x)
         return x
 
 
 class inconv(nn.Module):
     def __init__(self, in_ch, out_ch):
+        """
+        Initialize the convolution.
+
+        Args:
+            self: (todo): write your description
+            in_ch: (int): write your description
+            out_ch: (str): write your description
+        """
         super(inconv, self).__init__()
         self.conv = double_conv(in_ch, out_ch)
 
     def forward(self, x):
+        """
+        Forward computation.
+
+        Args:
+            self: (todo): write your description
+            x: (todo): write your description
+        """
         x = self.conv(x)
         return x
 
 
 class down(nn.Module):
     def __init__(self, in_ch, out_ch):
+        """
+        Initialize the convolution.
+
+        Args:
+            self: (todo): write your description
+            in_ch: (int): write your description
+            out_ch: (str): write your description
+        """
         super(down, self).__init__()
         self.mpconv = nn.Sequential(
             nn.MaxPool2d(2),
@@ -42,12 +80,28 @@ class down(nn.Module):
         )
 
     def forward(self, x):
+        """
+        Forward computation.
+
+        Args:
+            self: (todo): write your description
+            x: (todo): write your description
+        """
         x = self.mpconv(x)
         return x
 
 
 class up(nn.Module):
     def __init__(self, in_ch, out_ch, bilinear=True):
+        """
+        Initialize the convolutional layer.
+
+        Args:
+            self: (todo): write your description
+            in_ch: (int): write your description
+            out_ch: (str): write your description
+            bilinear: (todo): write your description
+        """
         super(up, self).__init__()
 
         #  would be a nice idea if the upsampling could be learned too,
@@ -60,6 +114,14 @@ class up(nn.Module):
         self.conv = double_conv(in_ch, out_ch)
 
     def forward(self, x1, x2):
+        """
+        Forward computation.
+
+        Args:
+            self: (todo): write your description
+            x1: (todo): write your description
+            x2: (todo): write your description
+        """
         x1 = self.up(x1)
         diffX = x1.size()[2] - x2.size()[2]
         diffY = x1.size()[3] - x2.size()[3]
@@ -72,10 +134,25 @@ class up(nn.Module):
 
 class outconv(nn.Module):
     def __init__(self, in_ch, out_ch):
+        """
+        Initialize a convolution.
+
+        Args:
+            self: (todo): write your description
+            in_ch: (int): write your description
+            out_ch: (str): write your description
+        """
         super(outconv, self).__init__()
         self.conv = nn.Conv2d(in_ch, out_ch, 1)
 
     def forward(self, x):
+        """
+        Forward computation.
+
+        Args:
+            self: (todo): write your description
+            x: (todo): write your description
+        """
         x = self.conv(x)
         return x
 
@@ -117,6 +194,14 @@ class ConvLSTMCell(nn.Module):
                               bias=self.bias)
 
     def forward(self, input_tensor, cur_state):
+        """
+        Forward computation.
+
+        Args:
+            self: (todo): write your description
+            input_tensor: (todo): write your description
+            cur_state: (todo): write your description
+        """
         h_cur, c_cur = cur_state
 
         combined = torch.cat([input_tensor, h_cur], dim=1)  # concatenate along channel axis
@@ -135,6 +220,13 @@ class ConvLSTMCell(nn.Module):
         return h_next, c_next
 
     def init_hidden(self, batch_size):
+        """
+        Initialize the encoder.
+
+        Args:
+            self: (todo): write your description
+            batch_size: (int): write your description
+        """
         return (torch.zeros(batch_size, self.hidden_dim, self.height, self.width).cuda(),
                 torch.zeros(batch_size, self.hidden_dim, self.height, self.width).cuda())
 
@@ -143,6 +235,20 @@ class ConvLSTM(nn.Module):
 
     def __init__(self, input_size, input_dim, hidden_dim, kernel_size, num_layers,
                  batch_first=False, bias=True, return_all_layers=False):
+        """
+        Initialize the network.
+
+        Args:
+            self: (todo): write your description
+            input_size: (int): write your description
+            input_dim: (int): write your description
+            hidden_dim: (int): write your description
+            kernel_size: (int): write your description
+            num_layers: (int): write your description
+            batch_first: (str): write your description
+            bias: (float): write your description
+            return_all_layers: (bool): write your description
+        """
         super(ConvLSTM, self).__init__()
 
         self._check_kernel_size_consistency(kernel_size)
@@ -231,6 +337,13 @@ class ConvLSTM(nn.Module):
         return layer_output_list, last_state_list
 
     def _init_hidden(self, batch_size):
+        """
+        Initialize hidden states.
+
+        Args:
+            self: (todo): write your description
+            batch_size: (int): write your description
+        """
         init_states = []
         for i in range(self.num_layers):
             init_states.append(self.cell_list[i].init_hidden(batch_size))
@@ -238,12 +351,25 @@ class ConvLSTM(nn.Module):
 
     @staticmethod
     def _check_kernel_size_consistency(kernel_size):
+        """
+        Check if kernel_size is consistent with size.
+
+        Args:
+            kernel_size: (int): write your description
+        """
         if not (isinstance(kernel_size, tuple) or
                 (isinstance(kernel_size, list) and all([isinstance(elem, tuple) for elem in kernel_size]))):
             raise ValueError('`kernel_size` must be tuple or list of tuples')
 
     @staticmethod
     def _extend_for_multilayer(param, num_layers):
+        """
+        Extend a list of multil_multil_multayers.
+
+        Args:
+            param: (todo): write your description
+            num_layers: (int): write your description
+        """
         if not isinstance(param, list):
             param = [param] * num_layers
         return param
