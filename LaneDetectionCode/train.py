@@ -8,6 +8,17 @@ from torchvision import transforms
 from torch.optim import lr_scheduler
 
 def train(args, epoch, model, train_loader, device, optimizer, criterion):
+    """
+    Training function.
+
+    Args:
+        epoch: (int): write your description
+        model: (todo): write your description
+        train_loader: (todo): write your description
+        device: (todo): write your description
+        optimizer: (todo): write your description
+        criterion: (int): write your description
+    """
     since = time.time()
     model.train()
     for batch_idx,  sample_batched in enumerate(train_loader):
@@ -27,6 +38,16 @@ def train(args, epoch, model, train_loader, device, optimizer, criterion):
         time_elapsed // 60, time_elapsed % 60))
 
 def val(args, model, val_loader, device, criterion, best_acc):
+    """
+    Eval on the value
+
+    Args:
+        model: (todo): write your description
+        val_loader: (todo): write your description
+        device: (todo): write your description
+        criterion: (int): write your description
+        best_acc: (todo): write your description
+    """
     model.eval()
     test_loss = 0
     correct = 0
@@ -45,6 +66,13 @@ def val(args, model, val_loader, device, criterion, best_acc):
 
 
 def get_parameters(model, layer_name):
+    """
+    Get all model parameters of the layer_children.
+
+    Args:
+        model: (todo): write your description
+        layer_name: (str): write your description
+    """
     import torch.nn as nn
     modules_skipped = (
         nn.ReLU,

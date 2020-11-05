@@ -4,6 +4,14 @@ import random
 from PIL import Image
 
 def flipImage(path1, path2, Format):
+    """
+    Flip a list of images.
+
+    Args:
+        path1: (str): write your description
+        path2: (str): write your description
+        Format: (str): write your description
+    """
     fileList = os.listdir(path1)
     if not os.path.exists(path2):
         os.makedirs(path2)
@@ -18,6 +26,12 @@ def flipImage(path1, path2, Format):
             flipImage(fileName, flipName, Format)
 
 def readIndex(index_fpath):
+    """
+    Reads the index file.
+
+    Args:
+        index_fpath: (str): write your description
+    """
     data = []
     with open(index_fpath, 'r') as file_to_read:
         while True:
@@ -29,6 +43,18 @@ def readIndex(index_fpath):
     return data
 
 def splitIndex(index_fpath, split_index_path, val_rate = 0.1, test_rate=0.0, is_random=False, op=op_split_lstm):
+    """
+    Split the index_fpath.
+
+    Args:
+        index_fpath: (str): write your description
+        split_index_path: (str): write your description
+        val_rate: (float): write your description
+        test_rate: (todo): write your description
+        is_random: (bool): write your description
+        op: (str): write your description
+        op_split_lstm: (todo): write your description
+    """
     data = readIndex(index_fpath)
     if is_random:
         random.shuffle(data)
@@ -59,6 +85,12 @@ def splitIndex(index_fpath, split_index_path, val_rate = 0.1, test_rate=0.0, is_
         test_file.close()
 
 def rebuildFileFolder(path): #清空eval文件夹
+    """
+    Recursively delete a directory.
+
+    Args:
+        path: (str): write your description
+    """
     if os.path.exists(path):
         shutil.rmtree(path)
     os.mkdir(path)

@@ -22,6 +22,11 @@ pretrained_path='./pretrained/unetlstm.pth'
 class_weight = [0.02, 1.02]
 
 def args_setting():
+    """
+    Parse command line arguments.
+
+    Args:
+    """
     # Training settings
     parser = argparse.ArgumentParser(description='PyTorch UNet-ConvLSTM')
     parser.add_argument('--model',type=str, default='UNet-ConvLSTM',help='( UNet-ConvLSTM | SegNet-ConvLSTM | UNet | SegNet | ')

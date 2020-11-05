@@ -10,6 +10,14 @@ import numpy as np
 import cv2
 
 def output_result(model, test_loader, device):
+    """
+    Perform result of the model.
+
+    Args:
+        model: (todo): write your description
+        test_loader: (bool): write your description
+        device: (todo): write your description
+    """
     model.eval()
     k = 0
     feature_dic=[]
@@ -42,6 +50,15 @@ def output_result(model, test_loader, device):
             img.save(config.save_path + "%s_pred.jpg" % k)#prediction result
 
 def evaluate_model(model, test_loader, device, criterion):
+    """
+    Evaluate the model.
+
+    Args:
+        model: (str): write your description
+        test_loader: (todo): write your description
+        device: (todo): write your description
+        criterion: (str): write your description
+    """
     model.eval()
     i = 0
     precision = 0.0
@@ -101,6 +118,13 @@ def evaluate_model(model, test_loader, device, criterion):
 
 
 def get_parameters(model, layer_name):
+    """
+    Get all model parameters of the layer_children.
+
+    Args:
+        model: (todo): write your description
+        layer_name: (str): write your description
+    """
     import torch.nn as nn
     modules_skipped = (
         nn.ReLU,

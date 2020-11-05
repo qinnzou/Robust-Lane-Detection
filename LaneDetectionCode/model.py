@@ -8,6 +8,11 @@ import operator
 from config import args_setting
 
 def generate_model(args):
+    """
+    Generate model
+
+    Args:
+    """
 
     use_cuda = args.cuda and torch.cuda.is_available()
     device = torch.device("cuda" if use_cuda else "cpu")
@@ -25,6 +30,14 @@ def generate_model(args):
 
 class UNet_ConvLSTM(nn.Module):
     def __init__(self, n_channels, n_classes):
+        """
+        Initialize the network.
+
+        Args:
+            self: (todo): write your description
+            n_channels: (int): write your description
+            n_classes: (todo): write your description
+        """
         super(UNet_ConvLSTM, self).__init__()
         self.inc = inconv(n_channels, 64)
         self.down1 = down(64, 128)
@@ -46,6 +59,13 @@ class UNet_ConvLSTM(nn.Module):
                                  return_all_layers=False)
 
     def forward(self, x):
+        """
+        Perform forward computation.
+
+        Args:
+            self: (todo): write your description
+            x: (todo): write your description
+        """
         x = torch.unbind(x, dim=1)
         data = []
         for item in x:
@@ -68,6 +88,12 @@ class UNet_ConvLSTM(nn.Module):
 
 class SegNet_ConvLSTM(nn.Module):
     def __init__(self):
+        """
+        Initialize the network initialization.
+
+        Args:
+            self: (todo): write your description
+        """
         super(SegNet_ConvLSTM,self).__init__()
         self.vgg16_bn = models.vgg16_bn(pretrained=True).features
         self.relu = nn.ReLU(inplace=True)
@@ -175,6 +201,13 @@ class SegNet_ConvLSTM(nn.Module):
                                  bias=True,
                                  return_all_layers=False)
     def forward(self, x):
+        """
+        Perform forward forward.
+
+        Args:
+            self: (todo): write your description
+            x: (todo): write your description
+        """
         x = torch.unbind(x, dim=1)
         data = []
         for item in x:
@@ -198,6 +231,14 @@ class SegNet_ConvLSTM(nn.Module):
 
 class UNet(nn.Module):
     def __init__(self, n_channels, n_classes):
+        """
+        Initialize the channel.
+
+        Args:
+            self: (todo): write your description
+            n_channels: (int): write your description
+            n_classes: (todo): write your description
+        """
         super(UNet, self).__init__()
         self.inc = inconv(n_channels, 64)
         self.down1 = down(64, 128)
@@ -211,6 +252,13 @@ class UNet(nn.Module):
         self.outc = outconv(64, n_classes)
 
     def forward(self, x):
+        """
+        Perform forward forward forward.
+
+        Args:
+            self: (todo): write your description
+            x: (todo): write your description
+        """
         x1 = self.inc(x)
         x2 = self.down1(x1)
         x3 = self.down2(x2)
@@ -226,6 +274,12 @@ class UNet(nn.Module):
 
 class SegNet(nn.Module):
     def __init__(self):
+        """
+        Initialize the convolutional layer.
+
+        Args:
+            self: (todo): write your description
+        """
         super(SegNet,self).__init__()
         self.vgg16_bn = models.vgg16_bn(pretrained=True).features
         self.relu = nn.ReLU(inplace=True)
@@ -325,6 +379,13 @@ class SegNet(nn.Module):
                                            nn.Conv2d(64, config.class_num, kernel_size=(3, 3), padding=(1,1)),
                                            )
     def forward(self, x):
+        """
+        Perform forward computation.
+
+        Args:
+            self: (todo): write your description
+            x: (todo): write your description
+        """
         f1, idx1 = self.index_MaxPool(self.conv1_block(x))
         f2, idx2 = self.index_MaxPool(self.conv2_block(f1))
         f3, idx3 = self.index_MaxPool(self.conv3_block(f2))
