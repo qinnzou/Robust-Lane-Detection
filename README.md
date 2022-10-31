@@ -84,7 +84,7 @@ The quantitative evaluations of Accuracy, Precision, Recall and  F1 measure woul
 We have put five images sequences in the "./LaneDetectionCode/data/testset" with test_index_demo.txt on UNet-ConvLSTM for demo. You can run test.py directly to check the performance.
 
 # Citation:
-Please cite our paper if you use this code or data in your own work:
+To cite our paper if you use this code or data in your own work:
 ```
 @article{zou2019tvt,
   title={Robust lane detection from continuous driving scenes using deep neural networks},
